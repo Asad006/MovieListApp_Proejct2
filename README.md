@@ -1,4 +1,4 @@
-# Project 2 - *MovieApp*
+# Project 2 - *Flixster pt1*
 
 Submitted by: **Asad merouani**
 
