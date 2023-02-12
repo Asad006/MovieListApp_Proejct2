@@ -1,26 +1,25 @@
-# Project 2 - *Flixster pt1*
+# Project 3 - *Flixster pt2*
 
-Submitted by: **Asad merouani**
+Submitted by: **Asad Merouani**
 
-**MovieApp** is a movie browsing app that that show a list of movies and their related information.
+**MovieApp** is a movie browsing app that that show a list of movies and their related information from remote API.
 
-Time spent: **8** hours spent in total
+ 
+
+Time spent: **X** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] Users are able to see a customized app icon and launch screen
-- [x] Your app should work for any screen size and orientation using AutoLayout constraints
-  - [x] Mark here if you will demostrate auto layout implemention as horizontal rotation or different phone size or both, then erase this text
-- [x] Displays at least 5 different movies in a table view
-- [x] Can tap into detail view of movie with a full description, backdrop image, and title
+- [X] Implement network call and table view to display a list of movies currently playing (title, description, image)
+- [X] App has a collection view with the same list of movies
+- [X] Uses a tab bar controller to switch between collection view and table view screens
  
 The following **optional** features are implemented:
 
-- [ ] Unique UI changes, such as background, font/color changes, etc.
-- [ ] User implements a collection view
-- [ ] User implemenets tab bar controller with at least two screens
+- [ ] Make an additional network call to another end-point.    
+- [ ] Allow users to scroll when context items are off-screen (table view implemention)
 
 The following **additional** features are implemented:
 
@@ -30,17 +29,18 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/Asad006/MovieListApp_Proejct2/blob/main/movieApp.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ios screen recorder
+
 ## Notes
 
 Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [2023] [Asad merouani]
+    Copyright [2023] [Asad Merouni]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

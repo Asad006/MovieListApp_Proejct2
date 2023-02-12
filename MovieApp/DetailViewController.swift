@@ -14,7 +14,6 @@ class DetailViewController: UIViewController {
     var movie: Movie!
     
     @IBOutlet weak var movieImageView: UIImageView!
-    
    
     @IBOutlet weak var ratingLabel: UILabel!
    
@@ -27,14 +26,19 @@ class DetailViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
+        
+        let api = "https:/image.tmdb.org/t/p/original"
+        let endpoint = movie.poster_path.absoluteString
+        let url = URL(string:api + endpoint)
+       
         // Do any additional setup after loading the view.
-        Nuke.loadImage(with: movie.artworkUrl100, into: movieImageView)
-        descriptionLabel.text = movie.description
-        popularityLabel.text = movie.popularity
-        ratingLabel.text = movie.rating
-        dateLabel.text = movie.releaseDate
+        Nuke.loadImage(with: url!, into: movieImageView)
+        descriptionLabel.text = movie.overview
+        popularityLabel.text = "Popularity: " + movie.popularity.description
+        ratingLabel.text = "Average Vote: " + movie.vote_average.description
+        dateLabel.text =  movie.vote_count.description + " Votes"
     }
     
 

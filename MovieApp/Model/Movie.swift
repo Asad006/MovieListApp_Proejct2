@@ -7,18 +7,25 @@
 
 
 import Foundation
-struct Movie{
-    let movieName: String
-    let description: String
-    let artworkUrl100: URL
+
+struct MovieResponse: Decodable {
+    let results: [Movie]
+}
+struct Movie: Decodable{
+    let original_title: String
+    let overview: String
+    let poster_path: URL
+    
     
     
     // Detail properties
-    let popularity: String
-    let rating: String
-    let releaseDate: String
+    let popularity: Double
+    let vote_average: Double
+    let release_date: Date
+    let vote_count: Int
     
 }
+/*
 extension Movie {
 
     /// An array of mock tracks
@@ -28,4 +35,4 @@ extension Movie {
                                        Movie(movieName: "Inception", description: "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.", artworkUrl100:URL(string: "https://www.themoviedb.org/t/p/original/8IB2e4r4oVhHnANbnm7O3Tj6tF8.jpg")!, popularity: "POPULARITY: 121", rating: "IMDb RATING: 8.8/10", releaseDate: "Release Date: 2010"),
                                        Movie(movieName: "WALL·E", description: "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind.", artworkUrl100:URL(string: "https://www.themoviedb.org/t/p/original/2Wjn5vxvJmomJQkLuUwyX2hBaif.jpg")!, popularity: "POPULARITY: 971", rating: "IMDb RATING: 8.4/10", releaseDate: "Release Date: 2008"),
                                        Movie(movieName: "John Wick: Chapter 4", description: "John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.", artworkUrl100:URL(string: "https://www.themoviedb.org/t/p/original/rAvgE4ms5eBJAz15Elk9t6MJzyU.jpg")!, popularity: "POPULARITY: 131", rating: "IMDb RATING: ./10", releaseDate: "Release Date: March 24, 2023")]
-        }
+        }*/

@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A502D0062995794400C6F21B /* PosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502D0052995794400C6F21B /* PosterViewController.swift */; };
+		A502D00829957CFA00C6F21B /* PosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A502D00729957CF900C6F21B /* PosterCell.swift */; };
 		A5340A26298C40000037738F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5340A25298C40000037738F /* AppDelegate.swift */; };
 		A5340A28298C40000037738F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5340A27298C40000037738F /* SceneDelegate.swift */; };
-		A5340A2A298C40000037738F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5340A29298C40000037738F /* ViewController.swift */; };
+		A5340A2A298C40000037738F /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5340A29298C40000037738F /* MovieViewController.swift */; };
 		A5340A2D298C40000037738F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5340A2B298C40000037738F /* Main.storyboard */; };
 		A5340A2F298C40040037738F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5340A2E298C40040037738F /* Assets.xcassets */; };
 		A5340A32298C40040037738F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5340A30298C40040037738F /* LaunchScreen.storyboard */; };
@@ -20,10 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A502D0052995794400C6F21B /* PosterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterViewController.swift; sourceTree = "<group>"; };
+		A502D00729957CF900C6F21B /* PosterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCell.swift; sourceTree = "<group>"; };
 		A5340A22298C40000037738F /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5340A25298C40000037738F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5340A27298C40000037738F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A5340A29298C40000037738F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5340A29298C40000037738F /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		A5340A2C298C40000037738F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5340A2E298C40040037738F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5340A31298C40040037738F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,8 +71,10 @@
 				A5340A3F298C45640037738F /* Model */,
 				A5340A25298C40000037738F /* AppDelegate.swift */,
 				A5340A27298C40000037738F /* SceneDelegate.swift */,
-				A5340A29298C40000037738F /* ViewController.swift */,
+				A5340A29298C40000037738F /* MovieViewController.swift */,
 				A5340A2B298C40000037738F /* Main.storyboard */,
+				A502D00729957CF900C6F21B /* PosterCell.swift */,
+				A502D0052995794400C6F21B /* PosterViewController.swift */,
 				A5340A49298C4F9B0037738F /* DetailViewController.swift */,
 				A5340A3D298C43140037738F /* MovieCell.swift */,
 				A5340A2E298C40040037738F /* Assets.xcassets */,
@@ -163,7 +169,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5340A2A298C40000037738F /* ViewController.swift in Sources */,
+				A502D00829957CFA00C6F21B /* PosterCell.swift in Sources */,
+				A502D0062995794400C6F21B /* PosterViewController.swift in Sources */,
+				A5340A2A298C40000037738F /* MovieViewController.swift in Sources */,
 				A5340A26298C40000037738F /* AppDelegate.swift in Sources */,
 				A5340A3E298C43140037738F /* MovieCell.swift in Sources */,
 				A5340A4A298C4F9B0037738F /* DetailViewController.swift in Sources */,

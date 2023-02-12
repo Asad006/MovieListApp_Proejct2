@@ -29,10 +29,14 @@ class MovieCell: UITableViewCell {
     
     func setCellElements(with movie: Movie){
         
-        movieTitleLabel.text = movie.movieName
-        movieDescriptionLabel.text = movie.description
-        
-        Nuke.loadImage(with: movie.artworkUrl100, into: movieImageView)
+        movieTitleLabel.text = movie.original_title
+        movieDescriptionLabel.text = movie.overview
+        let api = "https:/image.tmdb.org/t/p/w500"
+        let endpoint = movie.poster_path.absoluteString
+        let url = URL(string:api + endpoint)
+       
+        Nuke.loadImage(with:url! , into: movieImageView)
+         
     }
 
 }
